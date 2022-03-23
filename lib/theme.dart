@@ -8,7 +8,7 @@ ThemeData theme() {
     fontFamily: "Muli",
     appBarTheme: appBarTheme(),
     textTheme: textTheme(),
-    inputDecorationTheme: InputDecorationTheme(),
+    inputDecorationTheme: inputDecorationTheme(),
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
 }
@@ -20,15 +20,14 @@ InputDecorationTheme inputDecorationTheme() {
       gapPadding: 10,
     );
   return InputDecorationTheme(
-    // floatingLabelBehavior: FloatingLabelBehavior.always,
-    contentPadding: EdgeInsets.symmetric(horizontal: 42, vertical: 20),
+    floatingLabelBehavior: FloatingLabelBehavior.always,
+    contentPadding:
+    EdgeInsets.symmetric(horizontal: 45, vertical: 20),
     enabledBorder: outlineInputBorder,
     focusedBorder: outlineInputBorder,
     border: outlineInputBorder,
   );
 }
-
-
 
 TextTheme textTheme() {
   return TextTheme(

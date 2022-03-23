@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../size_config.dart';
 
-class CustomSuffixIcon extends StatelessWidget {
-  const CustomSuffixIcon({
+class CustomSurffixIcon extends StatelessWidget {
+  const CustomSurffixIcon({
     Key? key,
     required this.svgIcon,
   }) : super(key: key);

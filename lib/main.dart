@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/routs.dart';
+import 'package:shop_app/constants.dart';
+import 'package:shop_app/routes.dart';
+import 'package:shop_app/screens/profile/profile_screen.dart';
 import 'package:shop_app/screens/splash/splash_screen.dart';
 import 'package:shop_app/theme.dart';
 
-import 'constants.dart';
-
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: theme(),
       // home: SplashScreen(),
+      // We use routeName so that we dont need to remember the name
       initialRoute: SplashScreen.routeName,
       routes: routes,
     );
